@@ -5,10 +5,6 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      'sans': ['Archivo', 'sans-serif'],
-      'mono': ['Roboto Mono', 'monospace']
-    },
     extend: {
       colors: {
         
