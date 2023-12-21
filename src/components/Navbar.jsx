@@ -2,7 +2,7 @@ import '../index.css'
 
 function Navbar() {
     return (
-        <nav className="w-screen px-44 py-4 bg-zinc-500/1 fixed backdrop-blur-sm flex items-center justify-around select-none">
+        <nav className="w-screen px-44 py-4 bg-zinc-500/1 fixed backdrop-blur-sm flex items-center justify-around select-none z-50">
             <h1 className="font-black text-5xl my-gradient-radial font-mono">
                 &lt;Daniel /&gt;
             </h1>
