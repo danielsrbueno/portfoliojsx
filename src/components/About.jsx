@@ -8,10 +8,10 @@ function About() {
                         <p>Meu nome é Daniel Bueno, sou apaixonado por tecnologia desde pequeno. Obcecado por evolução, busco me aprimorar a cada dia.</p>
                     </div>
                     <div className="">
-                        <p>Comecei a desenvolver e programar em 2022, me apeguei totalmente pela programação. Então me candidatei para entrar na Etec Jaraguá no curso de Desenvolvimento de Sistemas com Ensino Médio, e felizmente passei em segundo lugar. No momento estou estudando e me aperfeiçoando a cada dia.</p>
+                        <p>Comecei a desenvolver e programar em 2022, me apeguei totalmente pela programação. Então me candidatei no processo seletivo para entrar na Etec Jaraguá no curso de Desenvolvimento de Sistemas com Ensino Médio, e felizmente passei em segundo lugar.</p>
                     </div>
                     <div className="">
-                        <p>Faço projetos apenas com HTML, CSS e JS puro, mas quero explorar novas linguagens, tecnologias e frameworks. Por mais que eu esteja na área de frontend, quero me tornar full stack. Pretendo aplicar para vagas de estágio, pois nunca trabalhei nessa área.</p>
+                        <p>Atualmente estou no 2º ano do ensino médio e faço projetos com ReactJS e TailwindCSS, mas quero explorar novas linguagens, tecnologias e frameworks. Por mais que eu esteja na área de frontend, quero me tornar full stack. Pretendo aplicar para vagas de estágio, pois nunca trabalhei nessa área.</p>
                     </div>
                 </div>
                 <div className="before:w-44 before:h-44 before:blur-3xl before:absolute before:translate-x-52 before:translate-y-60 before:bg-amber-300/50">
