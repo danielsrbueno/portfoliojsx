@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Introduction from './components/Introduction'
 import About from './components/About'
+import Projetcs from './components/Projects'
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
                 <Navbar />
                 <Introduction />
                 <About />
+                <Projetcs />
             </div>
         </>
     )
