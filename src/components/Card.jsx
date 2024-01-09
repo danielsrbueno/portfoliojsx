@@ -1,3 +1,12 @@
+import PropTypes from 'prop-types';
+
+Card.propTypes = {
+    ptype: PropTypes.string.isRequired,
+    pimg: PropTypes.string.isRequired,
+    ptitle: PropTypes.string.isRequired,
+    ptext: PropTypes.string.isRequired,
+};
+
 function Card({ptype, pimg, ptitle, ptext}) {
     let size = {
         body: "w-[36rem] h-[28.2rem] p-2 pb-3", // testar p-2
@@ -17,6 +26,14 @@ function Card({ptype, pimg, ptitle, ptext}) {
             title: "text-lg"
         }
     }
+    else {
+        size = {
+            body: "w-[36rem] h-[28.2rem] p-2 pb-3", // testar p-2
+            img: "",
+            btn: "w-40 h-10 rounded-xl after:hover:w-44",
+            txt: "",
+            title: "text-xl"
+    }}
     
     return(
         <div className={`${size.body} bg-white rounded-2xl flex flex-col justify-center shadow-md hover:scale-105 hover:shadow-xl transition-all duration-500 relative overflow-hidden`}>
