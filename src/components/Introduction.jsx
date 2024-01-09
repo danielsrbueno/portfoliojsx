@@ -2,7 +2,7 @@ import '../index.css'
 
 function Introduction() {
     const urlGithub = "https://github.com/danielsrbueno"
-    const urlLinkedin = "https://www.linkedin.com/in/daniel-da-silva-ramos-bueno-213a58252/"
+    const urlLinkedin = "https://www.linkedin.com/in/danielsrbueno"
     return (
         <div className="pt-20 w-full h-4/5 flex flex-col justify-center items-center gap-3 text-center select-none relative">
             <h1 className="text-7.5xl font-bold text-slate-900 before:w-36 before:h-36 before:blur-3xl before:absolute before:top-1/4 before:left-1/5 before:bg-rose-300/60">
