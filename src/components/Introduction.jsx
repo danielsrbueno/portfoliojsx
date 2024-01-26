@@ -5,10 +5,10 @@ function Introduction() {
     const urlLinkedin = "https://www.linkedin.com/in/danielsrbueno"
     return (
         <div className="pt-20 w-full h-4/5 flex flex-col justify-center items-center gap-3 text-center select-none relative">
-            <h1 className="text-7.5xl font-bold text-slate-900 before:w-36 before:h-36 before:blur-3xl before:absolute before:top-1/4 before:left-1/5 before:bg-rose-300/60">
+            <h1 className="text-front font-bold text-slate-900 before:w-36 before:h-36 before:blur-3xl before:absolute before:top-1/4 before:left-1/5 before:bg-rose-300/60">
                 Seu próximo desenvolvedor
             </h1>
-            <h1 className="text-7.5xl font-extrabold my-gradient-radial before:w-36 before:h-36 before:blur-3xl before:absolute before:top-2/4 before:right-1/4 before:bg-cyan-300/60">
+            <h1 className="text-front font-extrabold my-gradient-radial before:w-36 before:h-36 before:blur-3xl before:absolute before:top-2/4 before:right-1/4 before:bg-cyan-300/60">
                 <span>Frontend ;)</span>
             </h1>
             <p className="text-xl font-medium text-slate-500 mt-5">
