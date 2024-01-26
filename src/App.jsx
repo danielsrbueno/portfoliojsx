@@ -7,11 +7,12 @@ import Projetcs from './components/Projects'
 
 function App() {
     const comp = useRef(null)
-    const introSlider = document.querySelector("#intro-slider")
-    const title1 = document.querySelector("#title-1")
-    const title2 = document.querySelector("#title-2")
+    
 
     useLayoutEffect(() => {
+        const introSlider = document.querySelector("#intro-slider")
+    const title1 = document.querySelector("#title-1")
+    const title2 = document.querySelector("#title-2")
         let ctx = gsap.context(() => {
             const t1 = gsap.timeline()
             t1.from(title1, {
