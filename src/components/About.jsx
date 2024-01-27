@@ -1,4 +1,4 @@
-import { image } from '../assets/img/imgPerfil.png'
+import { image } from '../assets/img'
 
 function About() {
     return (
