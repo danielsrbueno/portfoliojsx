@@ -1,6 +1,5 @@
-import { image } from '../assets/img'
-
 function About() {
+    let image = "https://github.com/danielsrbueno/portfolio-imgs/blob/main/imgPerfil.png?raw=true"
     return (
         <div className="bg-zinc-400/10 w-full flex flex-col justify-around items-center text-justify my-48 py-12 relative shadow-sm">
             <h1 className="mb-6 text-4xl font-bold text-slate-900 before:w-32 before:h-32 before:blur-3xl before:absolute before:translate-x-36 before:-translate-y-10 before:bg-cyan-300/50">Sobre mim</h1>
