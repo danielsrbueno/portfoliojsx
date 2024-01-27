@@ -15,7 +15,7 @@ function About() {
                     </div>
                 </div>
                 <div className="before:w-44 before:h-44 before:blur-3xl before:absolute before:translate-x-52 before:translate-y-60 before:bg-amber-300/50">
-                    <img src="../src/assets/img/imgPerfil.png" alt="foto de perfil" className="w-96 rounded-full drop-shadow-lg scale-110 -mt-3"/>
+                    <img src="../assets/img/imgPerfil.png" alt="foto de perfil" className="w-96 rounded-full drop-shadow-lg scale-110 -mt-3"/>
                 </div>
             </div>
         </div>
