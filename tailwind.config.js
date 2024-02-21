@@ -12,6 +12,9 @@ export default {
       fontSize:{
         front: ['5.7rem' , '1'],
       },
+      animation:{
+        'ease': 'ease-in .8s linear infinite',
+      },
     },
   },
   plugins: [],
