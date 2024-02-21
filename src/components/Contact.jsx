@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="w-full h-3/6 mt-20 relative">
+    <div id="contact" className="w-full h-3/6 my-20 relative">
       <h1 className="text-4xl font-bold text-center">
         Contato
       </h1>
