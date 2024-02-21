@@ -36,7 +36,7 @@ function Projects() {
   }, [key]);
 
   return (
-    <div className="w-full flex flex-col justify-around items-center text-justify py-12 relative">
+    <div id="projects" className="w-full flex flex-col justify-around items-center text-justify py-12 relative">
       <h1 className="mb-6 text-4xl font-bold text-slate-900 before:w-36 before:h-36 before:blur-3xl before:absolute before:-translate-x-24 before:-translate-y-12 before:bg-rose-300/60">
         Meus projetos
       </h1>
@@ -106,7 +106,8 @@ function Projects() {
           />
         </div>
         <button
-          className="w-40 h-10 rounded-xl after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full"
+          className="w-40 h-10 rounded-xl after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-0 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full mt-4
+           select-none"
           id="more"
           onClick={() => {
             setKey(key ? false : true);
