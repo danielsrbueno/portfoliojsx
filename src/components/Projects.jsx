@@ -41,7 +41,7 @@ function Projects() {
         Meus projetos
       </h1>
       <div className="w-8/12 flex flex-col py-12 relative gap-6 justify-center items-center">
-        <div className="grid grid-flow-col gap-8 columns-2">
+        <div className="grid grid-flow-col gap-8 columns-2 max-md:grid-flow-row">
           <Card
             ptitle="DS Jaraguá"
             ptext="Veja tudo sobre o curso de desenvolvimento de sistemas!"
@@ -67,7 +67,7 @@ function Projects() {
             ptecs={["Express", "NodeJS", "Figma"]}
           />
         </div>
-        <div className="grid grid-flow-col gap-6 columns-3" id="smalls">
+        <div className="grid grid-flow-col gap-6 columns-3 max-md:hidden" id="smalls">
           <Card
             ptitle="Age calculator"
             ptext="Veja sua idade precisamente!"
@@ -107,7 +107,7 @@ function Projects() {
         </div>
         <button
           className="w-40 h-10 rounded-xl after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-0 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full mt-4
-           select-none"
+           select-none max-md:hidden"
           id="more"
           onClick={() => {
             setKey(key ? false : true);
