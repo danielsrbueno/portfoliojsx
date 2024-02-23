@@ -121,26 +121,26 @@ function Card({
         onClick={() => setVisible(true)}
       />
       <Dialog
-        className="w-10/12 h-11/12 bg-slate-100 rounded-lg p-4 shadow-2xl selection:bg-zinc-800 selection:text-zinc-50"
+        className="w-10/12 h-11/12 bg-slate-100 rounded-lg p-4 shadow-2xl  selection:bg-zinc-800 selection:text-zinc-50 max-md:h-full max-md:w-full"
         visible={visible}
         onHide={() => setVisible(false)}
       >
-        <div className="flex h-full w-full">
-          <div className="w-5/6 h-full p-10 flex flex-col gap-6 ">
+        <div className="flex h-full w-full max-md:flex-col-reverse overflow-y-auto overflow-x-hidden">
+          <div className="w-5/6 h-full p-10 flex flex-col gap-6 max-md:w-full max-md:p-2 max-md:gap-4">
             <div className="flex gap-8 items-center">
               <img
-                className="h-20"
+                className="h-20 max-md:h-12"
                 src={picon}
                 alt={`icone do projeto ${ptitle}`}
               />
-              <h1 className="font-black text-5xl font-jetbrains tracking-tight">
+              <h1 className="font-black text-5xl font-jetbrains tracking-tight max-md:text-3xl">
                 {ptitle}
               </h1>
             </div>
-            <p className="text-xl w-11/12 font-medium">{pabout}</p>
+            <p className="text-xl w-11/12 font-medium max-md:text-base max-md:text-justify">{pabout}</p>
             <div className="flex items-center justify-start gap-1 font-medium text-lg">
               <i className="pi pi-calendar"></i>
-              <p>{pdate}</p>
+              <p className="max-md:text-base">{pdate}</p>
             </div>
 
             <div className="flex text-3xl gap-2">
@@ -152,7 +152,7 @@ function Card({
               <Tooltip target=".rd" mouseTrack mouseTrackLeft={10} className="px-3 py-1 rounded text-zinc-50 bg-zinc-900"></Tooltip>
             </div>
             <div className="flex ">
-              <div className=" justify-end flex gap-2">
+              <div className="justify-end flex gap-2 max-[540px]:flex-col">
                 <a href={psite} target="blank">
                   <div className="w-40 h-10 rounded-lg after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-zinc-600 font-bold text-zinc-700 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-zinc-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full flex items-center justify-between px-8">
                     <i className="pi pi-external-link"></i>
@@ -173,7 +173,7 @@ function Card({
               </div>
             </div>
           </div>
-          <div className="h-full w-full  flex flex-col items-center justify-center">
+          <div className="h-full w-full flex flex-col items-center justify-center">
             <img className="w-full rounded-lg" src={pimg} alt="" />
           </div>
         </div>
