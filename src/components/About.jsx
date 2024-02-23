@@ -84,17 +84,18 @@ function About() {
                   <i className="devicon-javascript-plain hover:text-yellow-500 transition-all icon" data-pr-tooltip="JavaScript - Conhecimento sólido" />
                   <i className="devicon-react-original hover:text-cyan-400 transition-all icon" data-pr-tooltip="ReactJS - Estudando" />
                   <i className="devicon-tailwindcss-plain hover:text-cyan-600 transition-all icon" data-pr-tooltip="TailwindCSS - Conhecimento sólido" />
-                  <i className="devicon-figma-plain hover:text-zinc-600 transition-all icon" data-pr-tooltip="Figma - Conhecimento sólido" />
+                  <i className="devicon-figma-plain hover:text-zinc-600 transition-all icon" data-pr-tooltip="Figma - Conhecimento sólido (Etec)" />
                 </div>
                 <h1 className="font-bold text-slate-900 mb-4">Backend</h1>
                 <div className="flex gap-4 text-5xl">
                   <i className="devicon-git-plain hover:text-orange-700 transition-all icon" data-pr-tooltip="Git - Estudando" />
                   <i className="devicon-github-plain hover:text-zinc-600 transition-all icon" data-pr-tooltip="Github - Conhecimento sólido" />
-                  <i className="devicon-csharp-plain hover:text-violet-600 transition-all icon" data-pr-tooltip="CShap - Estudando (pela Etec)" />
+                  <i className="devicon-csharp-plain hover:text-violet-600 transition-all icon" data-pr-tooltip="CShap - Conhecimento sólido (Etec)" />
+                  <i className="devicon-php-plain hover:text-violet-400 transition-all icon" data-pr-tooltip="PHP - Estudando (Etec)"/>
                   <i className="devicon-nodejs-plain hover:text-lime-600 transition-all icon" data-pr-tooltip="NodeJS - Estudando"/>
                   <i className="devicon-typescript-plain hover:text-blue-600 transition-all icon" data-pr-tooltip="TypeScript - Estudando" />
                   <i className="devicon-express-original hover:text-zinc-600 transition-all icon" data-pr-tooltip="Express - Estudando" />
-                  <i className="devicon-mysql-plain hover:text-sky-800 transition-all icon" data-pr-tooltip="MySQL - Conhecimento sólido" />
+                  <i className="devicon-mysql-plain hover:text-sky-800 transition-all icon" data-pr-tooltip="MySQL - Estudando (Etec)" />
                   <i className="devicon-mongodb-plain hover:text-lime-600 transition-all icon" data-pr-tooltip="MongoDB - Estudando" />
                 </div>
               </div>
