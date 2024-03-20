@@ -17,8 +17,8 @@ function About() {
       <h1 className="mb-6 text-4xl font-bold text-slate-900 before:w-32 before:h-32 before:blur-3xl before:absolute before:translate-x-36 before:-translate-y-10 before:bg-cyan-300/50">
         Sobre mim
       </h1>
-      <div className="p-11 flex justify-around items-center text-justify max-sm:flex-col-reverse">
-        <div className="w-5/12 text-xl font-normal flex flex-col gap-4 scale-105 indent-3 text-slate-900 max-sm:w-10/12 max-sm:text-lg">
+      <div className="p-11 flex justify-around items-center text-justify max-lg:flex-col-reverse">
+        <div className="w-5/12 text-xl font-normal flex flex-col gap-4 scale-105 indent-3 text-slate-900 max-lg:w-10/12 max-sm:text-lg">
           <div className="">
             <p>
               Meu nome é Daniel Bueno, sou apaixonado por tecnologia desde
@@ -102,11 +102,11 @@ function About() {
             </Dialog>
           </div>
         </div>
-        <div className="before:w-44 before:h-44 before:blur-3xl before:absolute before:translate-x-52 before:translate-y-60 before:bg-amber-300/50 flex justify-center max-sm:mb-20">
+        <div className="before:w-44 before:h-44 before:blur-3xl before:absolute before:translate-x-8/12 before:translate-y-8/12 before:bg-amber-300/50 flex justify-center max-lg:mb-20 lg:before:h-64 lg:before:w-64">
           <img
             src={image}
             alt="foto de perfil"
-            className="w-96 rounded-full drop-shadow-lg scale-110 -mt-3 max-sm:w-1/2"
+            className="w-96 rounded-full drop-shadow-lg scale-110 -mt-3 max-sm:w-1/2 max-lg:w-72"
           />
         </div>
       </div>
