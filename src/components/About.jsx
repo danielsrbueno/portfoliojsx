@@ -71,11 +71,11 @@ function About() {
                 target=".icon"
                 mouseTrack
                 mouseTrackLeft={20}
-                className="px-3 py-1 rounded text-zinc-50 bg-zinc-900"
+                className="px-3 py-1 rounded text-zinc-50 bg-zinc-900 max-sm:text-xs"
               />
-              <div className="text-4xl">
+              <div className="text-4xl max-sm:text-3xl">
                 <h1 className="font-bold text-slate-900 mb-4">Frontend</h1>
-                <div className="flex gap-4 mb-12 text-5xl">
+                <div className="flex gap-4 mb-12 text-5xl max-md:text-4xl max-sm:text-2xl max-sm:gap-2">
                   <i
                     className="devicon-html5-plain hover:text-red-600 transition-all icon"
                     data-pr-tooltip="HTML5 - Conhecimento sólido"
@@ -87,11 +87,12 @@ function About() {
                   <i className="devicon-figma-plain hover:text-zinc-600 transition-all icon" data-pr-tooltip="Figma - Conhecimento sólido (Etec)" />
                 </div>
                 <h1 className="font-bold text-slate-900 mb-4">Backend</h1>
-                <div className="flex gap-4 text-5xl">
+                <div className="flex gap-4 text-5xl max-md:text-4xl max-sm:text-2xl max-sm:gap-2">
                   <i className="devicon-git-plain hover:text-orange-700 transition-all icon" data-pr-tooltip="Git - Estudando" />
                   <i className="devicon-github-plain hover:text-zinc-600 transition-all icon" data-pr-tooltip="Github - Conhecimento sólido" />
                   <i className="devicon-csharp-plain hover:text-violet-600 transition-all icon" data-pr-tooltip="CShap - Conhecimento sólido (Etec)" />
                   <i className="devicon-php-plain hover:text-violet-400 transition-all icon" data-pr-tooltip="PHP - Estudando (Etec)"/>
+                  <i className="devicon-java-plain hover:text-red-500 transition-all icon" data-pr-tooltip="Java - Estudando (Etec)"/>
                   <i className="devicon-nodejs-plain hover:text-lime-600 transition-all icon" data-pr-tooltip="NodeJS - Estudando"/>
                   <i className="devicon-typescript-plain hover:text-blue-600 transition-all icon" data-pr-tooltip="TypeScript - Estudando" />
                   <i className="devicon-express-original hover:text-zinc-600 transition-all icon" data-pr-tooltip="Express - Estudando" />
