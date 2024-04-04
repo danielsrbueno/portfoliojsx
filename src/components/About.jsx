@@ -1,16 +1,20 @@
 import { useState } from "react";
-import { useRef } from "react";
+// import { useRef } from "react";
 import { Dialog } from "primereact/dialog";
 import { Button } from "primereact/button";
 import { Tooltip } from "primereact/tooltip";
-import { Galleria } from 'primereact/galleria';
+// import { Galleria } from 'primereact/galleria';
 
 function About() {
   let image =
     "https://github.com/danielsrbueno/portfolio-imgs/blob/main/imgPerfil.png?raw=true";
+
   let [visible, setVisible] = useState(false);
-  let galleria = useRef(null);
-  const images = ["https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/Arquivo-digitalizado.png", "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/certificado.png", "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/certificate-_1_.png", "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/certificate.png"];
+
+  // const itemTemplate = () => {
+  //   return <img src={"https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/Arquivo-digitalizado.png"} alt={"item.alt"} style={{ width: '100%' }} />
+  // }
+  // [, "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/certificado.png", "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/certificate-_1_.png", "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/certificate.png"];
 
   return (
     <div id="about" className="bg-zinc-400/10 w-full flex flex-col justify-around items-center text-justify my-48 py-12 relative shadow-sm">
@@ -55,13 +59,12 @@ function About() {
               className="self-center outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full select-none w-36 h-10 rounded-lg after:hover:w-44"
               onClick={() => setVisible(true)}
             />
-            <Button
+            {/* <Button
               label="Certificados"
               className="self-center outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full select-none w-36 h-10 rounded-lg after:hover:w-44"
               onClick={() => galleria.current.show()}
-            />
-            <Galleria ref={galleria} value={images} 
-       showThumbnails={false}/>
+            /> */}
+            {/* <Galleria value={images} item={itemTemplate} numVisible={3}/> */}
             <Dialog
               className=" bg-slate-100 rounded-lg p-10 shadow-2xl selection:bg-zinc-800 selection:text-zinc-50"
               visible={visible}
