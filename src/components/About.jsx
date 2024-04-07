@@ -49,8 +49,8 @@ function About() {
               Gosto de aprender coisas novas para aplicar em meus projetos,
               sempre dedico uma parte do meu dia para estudar desenvolvimento
               sozinho. Além da tecnologia, amo treinar musculação, andar de
-              bicicleta, acampar, ouvir música, ler livro, ir à igreja e
-              investir.
+              bicicleta, acampar, escutar músicas, ler livros, ir à igreja e
+              ver dividendos caindo na minha conta.
             </p>
           </div>
           <div className="flex relative p-2 gap-4">
