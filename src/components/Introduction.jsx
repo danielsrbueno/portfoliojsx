@@ -14,7 +14,7 @@ function Introduction() {
             <p className="text-xl font-medium text-slate-500 mt-5 max-sm:text-base max-sm:px-3">
                 Olá! Eu sou o Daniel Bueno, tenho 16 anos, sou desenvolvedor Frontend
             </p>
-            <div className='flex gap-11 mt-6 z-40 max-sm:gap-8'>
+            <div className='flex gap-11 mt-6 z-30 max-sm:gap-8'>
                 <a href={urlGithub} target='blank'>
                     <button className='bg-black text-white max-sm:w-24 sm:w-36 max-sm:h-9 sm:h-10 max-sm:text-sm max-sm:px-2.5 px-5 flex items-center justify-between rounded-md font-semibold shadow-lg hover:shedow-2xl hover:bg-white hover:text-black hover:scale-105 transition-all duration-500'>
                         <i className='pi pi-github max-sm:text-base text-xl'></i>
