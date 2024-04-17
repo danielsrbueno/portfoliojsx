@@ -41,7 +41,7 @@ function Navbar() {
     if (isMobile && !menu) 
       return " hidden ";
     else if (isMobile && menu)
-      return " flex flex-col gap-7 text-zinc-800 font-semibold text-lg";
+      return " flex flex-col gap-7 text-zinc-800 font-semibold text-lg text-center";
     else if (!isMobile)
       return " font-semibold text-lg flex gap-7 text-zinc-600 ";
   }
@@ -49,14 +49,14 @@ function Navbar() {
     if (isMobile && !menu) 
       return " justify-between w-screen bg-zinc-500/1 fixed backdrop-blur-sm flex items-center select-none z-40 min-sm:px-4 max-sm:px-12 max-md:px-20 max-lg:px-24 h-20 ";
     else if (isMobile && menu)
-      return " w-screen h-screen absolute top-0 left-0 select-none flex flex-col items-center justify-center bg-zinc-500/1 backdrop-blur-md z-40 gap-7 text-zinc-950 font-semibold text-lg";
+      return " w-screen h-screen absolute top-0 left-0 select-none flex flex-col items-center justify-center bg-zinc-500/1 backdrop-blur-xl z-40 gap-7 text-zinc-950 font-semibold text-lg";
     else if (!isMobile)
       return " justify-around w-screen bg-zinc-500/1 fixed backdrop-blur-sm flex items-center select-none z-40 min-sm:px-4 max-sm:px-12 max-md:px-20 max-lg:px-24 h-20";
   }
 
   return (
     <nav className={fnNav()}>
-      <h1 className={(isMobile & menu ? " text-4xl  font-extrabold my-gradient-radial font-jetbrains" : " font-extrabold my-gradient-radial font-jetbrains max-sm:text-2xl max-lg:text-4xl lg:text-5xl ") + " "}>
+      <h1 className={(isMobile & menu ? " text-4xl  font-extrabold my-gradient-radial font-jetbrains -mt-12 mb-10" : " font-extrabold my-gradient-radial font-jetbrains max-sm:text-2xl max-lg:text-4xl lg:text-5xl ") + " "}>
         &lt;Daniel /&gt;
       </h1>
       
@@ -87,7 +87,7 @@ function Navbar() {
           Contato
         </li>
       </ul>
-      <button className={(isMobile ? "pi pi-bars text-2xl z-50 " : "hidden ") + (isMobile & menu ? "absolute top-7 right-10 text-2xl" : "")} onClick={() => setMenu(!menu)}/>
+      <button className={(isMobile ? "pi pi-bars text-2xl z-50 " : "hidden ") + (isMobile & menu ? "absolute top-7 right-10 text-2xl" : "") + " select-none"} onClick={() => setMenu(!menu)}/>
     </nav>
   );
 }
