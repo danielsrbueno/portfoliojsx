@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from 'react'
+import { useEffect, useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import Navbar from './components/Navbar'
 import Introduction from './components/Introduction'
@@ -56,9 +56,21 @@ function App() {
         return () => ctx.revert()
     }, [])
 
+    useEffect(() => {
+        if (!("theme" in localStorage)) 
+            localStorage.setItem("theme", "light");
+          
+        else if (localStorage.theme == "dark") 
+            document.documentElement.classList.add("dark");
+          
+        else if (localStorage.theme == "light")
+            document.documentElement.classList.remove("dark");
+          
+        }, []);
+
     return (
         <>
-            <div id="window" className="w-screen h-screen overflow-x-hidden bg-zinc-100 selection:bg-zinc-800 selection:text-zinc-50">
+            <div id="window" className="w-screen h-screen overflow-x-hidden bg-zinc-100 selection:bg-zinc-800 selection:text-zinc-50 dark:bg-slate-900 dark:selection:bg-zinc-300 dark:selection:text-slate-900 transition-all">
                 <div className='h-screen p-10 bg-zinc-900 absolute top-0 left-0 z-50 w-full flex flex-col gap-4 tracking-tighter font-black font-jetbrains items-center justify-center  text-zinc-200' id='intro-slider'>
                     <h1 className='max-sm:text-2xl sm:text-5xl lg:text-6xl' id='title-1'>{greeting}</h1>
                     <h1 className='max-sm:text-2xl sm:text-5xl lg:text-6xl' id='title-2'>Seja bem-vindo!</h1>
