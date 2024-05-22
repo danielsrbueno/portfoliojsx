@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div id="contact" className="w-full h-3/6 my-20 relative">
-      <h1 className="text-4xl font-bold text-center">
+      <h1 className="text-4xl text-slate-900 font-bold text-center dark:text-zinc-100">
         Contato
       </h1>
       <div className="flex flex-col justify-center items-center mt-12 gap-4">

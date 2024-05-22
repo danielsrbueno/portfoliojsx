@@ -91,7 +91,7 @@ function Card({
 
   return (
     <div
-      className={`${size.body} bg-white rounded-2xl flex flex-col justify-between shadow-md hover:scale-105 hover:shadow-xl transition-all duration-500 relative overflow-hidden`}
+      className={`${size.body} bg-zinc-50 rounded-2xl flex flex-col justify-between shadow-md hover:scale-105 hover:shadow-xl transition-all duration-500 relative overflow-hidden dark:bg-slate-800/50`}
     >
       <div
         className={`w-11/12 h-1/3 bg-orange-500 ${size.blur} absolute -top-12 -left-16`}
@@ -112,16 +112,16 @@ function Card({
         alt=""
       />
       <div className="flex flex-col px-2 py-3 z-0">
-        <h1 className={`${size.title} font-bold text-slate-900`}>{ptitle}</h1>
-        <p className={`${size.txt} text-slate-500 truncate`}>{ptext}</p>
+        <h1 className={`${size.title} font-bold text-slate-900 dark:text-zinc-200`}>{ptitle}</h1>
+        <p className={`${size.txt} text-slate-500 truncate dark:text-zinc-300`}>{ptext}</p>
       </div>
       <Button
-        className={`${size.btn} self-center outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-0 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full select-none`}
+        className={`${size.btn} self-center outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-0 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full select-none dark:text-zinc-300`}
         label="Ver mais"
         onClick={() => setVisible(true)}
       />
       <Dialog
-        className="w-10/12 h-11/12 bg-slate-100 rounded-lg p-4 shadow-2xl  selection:bg-zinc-800 selection:text-zinc-50 max-md:h-full max-md:w-full"
+        className="w-10/12 h-11/12 bg-slate-100 rounded-lg p-4 shadow-2xl  selection:bg-zinc-800 selection:text-zinc-50 max-md:h-full max-md:w-full dark:bg-slate-900 dark:text-zinc-200 dark:shadow-[0_20px_35px_-12px_rgba(255,255,255,0.1)]"
         visible={visible}
         onHide={() => setVisible(false)}
       >
@@ -154,13 +154,13 @@ function Card({
             <div className="flex ">
               <div className="justify-end flex gap-2 max-[540px]:flex-col">
                 <a href={psite} target="blank">
-                  <div className="w-40 h-10 rounded-lg after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-zinc-600 font-bold text-zinc-700 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-zinc-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full flex items-center justify-between px-8">
+                  <div className="w-40 h-10 rounded-lg after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-zinc-600 font-bold text-zinc-700 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-zinc-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full flex items-center justify-between px-8 dark:text-slate-100 dark:after:bg-black dark:outline-black">
                     <i className="pi pi-external-link"></i>
                     <p>Abrir site</p>
                   </div>
                 </a>
                 <a href={pgithub} target="blank">
-                  <div className="w-40 h-10 rounded-lg after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-black font-bold text-slate-900 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-black hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full flex items-center justify-between gap-2 px-6">
+                  <div className="w-40 h-10 rounded-lg after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-black font-bold text-black z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-black hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full flex items-center justify-between gap-2 px-6 dark:outline-white dark:text-white dark:after:bg-white dark:hover:text-black">
                     <i className="pi pi-github text-lg"></i>
                     <p>Repositório</p>
                   </div>
@@ -168,7 +168,7 @@ function Card({
                 <Button
                   label="Fechar"
                   onClick={() => setVisible(false)}
-                  className="w-40 h-10 rounded-lg after:hover:w-44 outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full select-none"
+                  className="w-40 h-10 rounded-lg after:hover:w-44 outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full select-none dark:text-zinc-300"
                 />
               </div>
             </div>
