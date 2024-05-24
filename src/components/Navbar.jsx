@@ -71,12 +71,6 @@ function Navbar() {
       return " justify-around w-screen bg-zinc-500/1 fixed backdrop-blur-sm flex items-center select-none z-40 min-sm:px-4 max-sm:px-12 max-md:px-20 max-lg:px-24 h-20";
   };
 
-  const fnBtn = () => {
-    if (!isMobile) return " ";
-    else if (isMobile && !menu) return " hidden ";
-    else if (isMobile && menu) return " block absolute bottom-7 right-10 ";
-  };
-
   return (
     <nav className={fnNav() + " dark:text-zinc-300"}>
       <h1
@@ -119,8 +113,19 @@ function Navbar() {
       }
       onClick={() => setMenu(!menu)}/>
 
-      <button id="btn-icon" className={fnBtn() + " pi z-50 text-2xl select-none "}
-      onClick={() => setTheme(!theme)}/>
+      {
+        isMobile && menu && (
+          <button id="btn-icon" className={" pi z-50 text-2xl select-none absolute bottom-7 right-10 " + (localStorage.getItem("theme") === "dark" ? "pi-moon" : "pi-sun")}
+          onClick={() => setTheme(!theme)}/>
+        )
+      }
+      {
+        !isMobile && (
+          <button id="btn-icon" className={" pi z-50 text-2xl select-none " + (localStorage.getItem("theme") === "dark" ? "pi-moon" : "pi-sun")}
+          onClick={() => setTheme(!theme)}/>
+        )
+      }
+      
     </nav>
   );
 }
