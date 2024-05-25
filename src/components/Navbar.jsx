@@ -39,11 +39,6 @@ function Navbar() {
   }, [section]);
 
   useEffect(() => {
-    if (localStorage.theme == "dark")
-      localStorage.theme = "light";
-    else if (localStorage.theme == "light")
-      localStorage.theme = "dark";
-
     if (localStorage.theme == "dark") {
       document.documentElement.classList.add("dark");
       document.getElementById("btn-icon").classList.remove("pi-sun");
@@ -116,13 +111,27 @@ function Navbar() {
       {
         isMobile && menu && (
           <button id="btn-icon" className={" pi z-50 text-2xl select-none absolute bottom-7 right-10 " + (localStorage.getItem("theme") === "dark" ? "pi-moon" : "pi-sun")}
-          onClick={() => setTheme(!theme)}/>
+          onClick={() => {
+            if (localStorage.theme == "dark")
+              localStorage.theme = "light";
+            else if (localStorage.theme == "light")
+              localStorage.theme = "dark";
+            
+            setTheme(!theme);
+          }}/>
         )
       }
       {
         !isMobile && (
           <button id="btn-icon" className={" pi z-50 text-2xl select-none " + (localStorage.getItem("theme") === "dark" ? "pi-moon" : "pi-sun")}
-          onClick={() => setTheme(!theme)}/>
+          onClick={() => {
+            if (localStorage.theme == "dark")
+              localStorage.theme = "light";
+            else if (localStorage.theme == "light")
+              localStorage.theme = "dark";
+
+            setTheme(!theme);
+          }}/>
         )
       }
       
