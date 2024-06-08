@@ -10,11 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flag-icons": "^7.2.3",
     "gsap": "^3.12.5",
+    "i18next": "^23.11.5",
+    "package-lock.json": "^1.0.0",
     "primeicons": "^6.0.1",
     "primereact": "^10.3.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
