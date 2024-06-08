@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/all";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 function Navbar() {
   gsap.registerPlugin(ScrollTrigger);
@@ -11,6 +13,8 @@ function Navbar() {
   const [menu, setMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [theme, setTheme] = useState(false);
+
+  const [t, i18n] = useTranslation("global");
 
   const handleResize = () => {
     if (window.innerWidth <= 980) {
@@ -66,6 +70,10 @@ function Navbar() {
       return " justify-around w-screen bg-zinc-500/1 fixed backdrop-blur-sm flex items-center select-none z-40 min-sm:px-4 max-sm:px-12 max-md:px-20 max-lg:px-24 h-20";
   };
 
+  const handleChangeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
   return (
     <nav className={fnNav() + " dark:text-zinc-300"}>
       <h1
@@ -78,7 +86,7 @@ function Navbar() {
         id="link-1"
         className="cursor-pointer hover:text-zinc-950 transition-all animate-ease border-b-transparent border-b-2 hover:border-zinc-800/95 active:text-zinc-950 active:border-zinc-800/95 dark:hover:border-zinc-100/95 dark:hover:text-zinc-100"
         onClick={() => { setSection("#introduction"); setMenu(false); }}>
-          Início
+          {t("nav.home")}
         </li>
         <li
           className="cursor-pointer hover:text-zinc-950 transition-all animate-ease border-b-transparent border-b-2 hover:border-zinc-800/95 active:text-zinc-950 active:border-zinc-800/95 dark:hover:border-zinc-100/95 dark:hover:text-zinc-100"
@@ -87,7 +95,7 @@ function Navbar() {
             setMenu(false);
           }}
         >
-          Sobre mim
+          {t("nav.about")}
         </li>
         <li
           className="cursor-pointer hover:text-zinc-950 transition-all animate-ease border-b-transparent border-b-2 hover:border-zinc-800/95 active:text-zinc-950 active:border-zinc-800/95 dark:hover:border-zinc-100/95 dark:hover:text-zinc-100 "
@@ -96,9 +104,9 @@ function Navbar() {
             setMenu(false);
           }}
         >
-          Projetos
+          {t("nav.projects")}
         </li>
-        <li className="cursor-pointer hover:text-zinc-950 transition-all animate-ease border-b-transparent border-b-2 hover:border-zinc-800/95 active:text-zinc-950 active:border-zinc-800/95 dark:hover:border-zinc-100/95 dark:hover:text-zinc-100" onClick={() => { setSection("#contact"); setMenu(false) }}> Contato </li>
+        <li className="cursor-pointer hover:text-zinc-950 transition-all animate-ease border-b-transparent border-b-2 hover:border-zinc-800/95 active:text-zinc-950 active:border-zinc-800/95 dark:hover:border-zinc-100/95 dark:hover:text-zinc-100" onClick={() => { setSection("#contact"); setMenu(false) }}> {t("nav.contact")} </li>
       </ul>
       <button 
       id="btn-menu" 
@@ -108,33 +116,53 @@ function Navbar() {
       }
       onClick={() => setMenu(!menu)}/>
 
-      {
-        isMobile && menu && (
-          <button id="btn-icon" className={" pi z-50 text-2xl select-none absolute bottom-7 right-10 " + (localStorage.getItem("theme") === "dark" ? "pi-moon" : "pi-sun")}
-          onClick={() => {
-            if (localStorage.theme == "dark")
-              localStorage.theme = "light";
-            else if (localStorage.theme == "light")
-              localStorage.theme = "dark";
-            
-            setTheme(!theme);
-          }}/>
-        )
-      }
-      {
-        !isMobile && (
-          <button id="btn-icon" className={" pi z-50 text-2xl select-none " + (localStorage.getItem("theme") === "dark" ? "pi-moon" : "pi-sun")}
-          onClick={() => {
-            if (localStorage.theme == "dark")
-              localStorage.theme = "light";
-            else if (localStorage.theme == "light")
-              localStorage.theme = "dark";
-
-            setTheme(!theme);
-          }}/>
-        )
-      }
-      
+      <div className="flex gap-6">
+        {
+          isMobile && menu && (
+            <button id="btn-icon" className={" pi z-50 text-2xl select-none absolute bottom-20 right-11 " + (localStorage.getItem("theme") === "dark" ? "pi-moon" : "pi-sun")}
+            onClick={() => {
+              if (localStorage.theme == "dark")
+                localStorage.theme = "light";
+              else if (localStorage.theme == "light")
+                localStorage.theme = "dark";
+        
+              setTheme(!theme);
+            }}/>
+          )
+        }
+        {
+          !isMobile && (
+            <button id="btn-icon" className={" pi z-50 text-2xl select-none " + (localStorage.getItem("theme") === "dark" ? "pi-moon" : "pi-sun")}
+            onClick={() => {
+              if (localStorage.theme == "dark")
+                localStorage.theme = "light";
+              else if (localStorage.theme == "light")
+                localStorage.theme = "dark";
+              setTheme(!theme);
+            }}/>
+          )
+        }
+        {
+          isMobile && menu && (
+            <button id="btn-lang-menu" className={" fi fi-br fib z-50 text-2xl select-none bottom-7 right-10 menu " + (localStorage.getItem("lang") === "pt" ? "fi-br" : "fi-us")}
+            onClick={() => {
+              localStorage.lang == "en" ? localStorage.lang = "pt" : localStorage.lang = "en";
+              i18n.language === "en" ? handleChangeLanguage("pt") : handleChangeLanguage("en");
+            }}
+            />
+          )
+        }
+        {
+          !isMobile && (
+            <button id="btn-lang" className={"fi fi-br fib z-50 text-2xl select-none " + (localStorage.getItem("lang") === "pt" ? "fi-br" : "fi-us")}
+            onClick={() => {
+              localStorage.lang == "en" ? localStorage.lang = "pt" : localStorage.lang = "en";
+              i18n.language === "en" ? handleChangeLanguage("pt") : handleChangeLanguage("en");
+            }}
+            />
+          )
+        }
+      </div>
     </nav>
   );
 }

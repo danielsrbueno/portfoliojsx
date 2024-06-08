@@ -1,18 +1,21 @@
 import '../index.css'
+import { useTranslation } from "react-i18next";
 
 function Introduction() {
     const urlGithub = "https://github.com/danielsrbueno"
     const urlLinkedin = "https://www.linkedin.com/in/danielsrbueno"
+    const [t] = useTranslation("global");
+
     return (
         <div id='introduction' className="pt-32 w-full h-4/5 flex flex-col justify-center items-center text-center select-none relative">
             <h1 className="font-bold text-front text-slate-900 before:w-36 before:h-36 before:blur-3xl before:absolute before:top-1/4 before:left-1/5 before:bg-rose-300/60 max-sm:text-4xl max-sm:px-3 dark:text-zinc-300">
-                Seu próximo desenvolvedor
+                {t("intro.title")}
             </h1>
             <h1 className="font-extrabold text-front my-gradient-radial before:w-36 before:h-36 before:blur-3xl before:absolute before:top-2/4 before:right-1/4 before:bg-cyan-300/60 max-sm:text-5xl">
                 <span>Frontend ;)</span>
             </h1>
             <p className="text-xl font-medium text-slate-500 mt-5 max-sm:text-base max-sm:px-3 dark:text-zinc-400">
-                Olá! Eu sou o Daniel Bueno, tenho 16 anos, sou desenvolvedor Frontend
+            {t("intro.subtitle")}
             </p>
             <div className='flex gap-11 mt-6 z-30 max-sm:gap-8'>
                 <a href={urlGithub} target='blank'>

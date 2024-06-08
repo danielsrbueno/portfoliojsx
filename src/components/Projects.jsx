@@ -1,5 +1,6 @@
 import Card from "./Card";
 import { useState, useLayoutEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
   const urlAge =
@@ -20,6 +21,7 @@ function Projects() {
   const iconCPS = "https://cdn1.iconfinder.com/data/icons/complete-version-1/1024/action4-512.png"
 
   const [key, setKey] = useState(false);
+  const [t] = useTranslation("global");
 
   useLayoutEffect(() => {
     const div = document.querySelector("#smalls");
@@ -28,27 +30,27 @@ function Projects() {
     if (key) {
       div.classList.add("grid");
       div.classList.remove("hidden");
-      txt.textContent = "Menos projetos";
+      txt.textContent = t("projects.fewerprojects");
     } else {
       div.classList.add("hidden");
-      txt.textContent = "Mais projetos";
+      txt.textContent = t("projects.moreprojects");
     }
-  }, [key]);
+  }, [key, t]);
 
   return (
     <div id="projects" className="w-full flex flex-col justify-around items-center text-justify py-12 relative">
       <h1 className="mb-6 text-4xl font-bold text-slate-900 before:w-36 before:h-36 before:blur-3xl before:absolute before:-translate-x-24 before:-translate-y-12 before:bg-rose-300/60 dark:text-zinc-100">
-        Meus projetos
+        {t("projects.title")}
       </h1>
       <div className="w-8/12 flex flex-col py-12 relative gap-6 justify-center items-center">
         <div className="grid grid-flow-col gap-8 columns-2 max-md:grid-flow-row">
           <Card
             ptitle="DS Jaraguá"
-            ptext="Veja tudo sobre o curso de desenvolvimento de sistemas!"
+            ptext={t("projects.ds.text")}
             ptype="large"
             pimg={urlDS}
-            pabout="Desenvolvido em parceria com dois amigos da escola, com o objetivo de promover nosso curso e ampliar nossa visibilidade, essa ideia foi sugerida por um professor, e nós decidimos assumir a responsabilidade pelo projeto. Este foi meu primeiro projeto em desenvolvimento com ReactJS!"
-            pdate="Novembro, 2023"
+            pabout={t("projects.ds.about")}
+            pdate={t("month.november")}
             psite="https://ds-jaragua.vercel.app/"
             pgithub="https://github.com/freitassdev/ds-etecjaragua"
             picon={iconDS}
@@ -56,12 +58,12 @@ function Projects() {
           />
           <Card
             ptitle="Short Summary"
-            ptext="Saiba o conteúdo do vídeo sem sequer entrar nele."
+            ptext={t("projects.short.text")}
             ptype="large"
             pimg={urlShort}
             picon={iconShort}
-            pabout="O Short Summary permite ao usuário visualizar um resumo do vídeo sem precisar assisti-lo, utilizando inteligência artificial para extrair o texto e criar o resumo. Essa foi minha primeira experiência com Express, a qual me proporcionou muitos aprendizados sobre NodeJS."
-            pdate="Outubro, 2023"
+            pabout={t("projects.short.about")}
+            pdate={t("month.october")}
             psite="https://short-summary-nu.vercel.app/"
             pgithub="https://github.com/danielsrbueno/short-summary"
             ptecs={["Express", "NodeJS", "Figma"]}
@@ -70,36 +72,36 @@ function Projects() {
         <div className="grid grid-flow-col gap-6 columns-3 max-md:hidden" id="smalls">
           <Card
             ptitle="Age calculator"
-            ptext="Veja sua idade precisamente!"
+            ptext={t("projects.age.text")}
             ptype="small"
             pimg={urlAge}
             picon={iconAge}
-            pabout="O Age Calculator é uma aplicação web que permite ao usuário calcular sua idade em anos, meses e dias. Este projeto me permitiu aprender muito sobre a manipulação de datas em JavaScript, além de melhorar minhas habilidades com forms no HTML e CSS."
-            pdate="Julho, 2023"
+            pabout={t("projects.age.about")}
+            pdate={t("month.july")}
             psite="https://danielsrbueno.github.io/age-calculator/"
             pgithub="https://github.com/danielsrbueno/age-calculator"
             ptecs={["HTML", "CSS", "JavaScript"]}
           />
           <Card
             ptitle="Festa Junina"
-            ptext="História, comidas e receitas, tudo sobre festa Junina!"
+            ptext={t("projects.festa.text")}
             ptype="small"
             pimg={urlFesta}
             picon={iconFesta}
-            pabout="O Festa Junina é uma aplicação web que permite ao usuário conhecer mais sobre a festa junina, suas origens, comidas e receitas. Este projeto foi um trabalho escolar, e foi desenvolvido apenas para resonsividade de desktop. Ele me ajudou a entender melhor o funcionamento do JavaScript e a importância de um design minimalista."
-            pdate="Junho, 2023"
+            pabout={t("projects.festa.about")}
+            pdate={t("month.june")}
             psite="https://danielsrbueno.github.io/festa-junina/"
             pgithub="https://github.com/danielsrbueno/festa-junina"
             ptecs={["HTML", "CSS", "JavaScript"]}
           />
           <Card
             ptitle="CPS Test"
-            ptext="Meça seu CPS e veja sua pontuação!"
+            ptext={t("projects.cps.text")}
             ptype="small"
             pimg={urlCPS}
             picon={iconCPS}
-            pabout="O CPS Test é uma aplicação web que permite ao usuário medir sua velocidade de cliques por segundo e ver sua pontuação. Este projeto foi inspirado em um desafio que meu amigo me propôs, e como sou competitivo, resolvi desenvolvê-lo. Foi uma oportunidade de aprender sobre a manipulação de eventos em JavaScript."
-            pdate="Julho, 2023"
+            pabout={t("projects.cps.about")}
+            pdate={t("month.july")}
             psite="https://danielsrbueno.github.io/cps-test/"
             pgithub="https://github.com/danielsrbueno/cps-test"
             ptecs={["HTML", "CSS", "JavaScript"]}

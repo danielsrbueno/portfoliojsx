@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Dialog } from "primereact/dialog";
 import { Button } from "primereact/button";
 import { Tooltip } from 'primereact/tooltip';
+import { useTranslation } from "react-i18next";
 
 Card.propTypes = {
   ptype: PropTypes.string.isRequired,
@@ -37,6 +38,8 @@ function Card({
   const iconCss = "devicon-css3-plain"
   const iconJs = "devicon-javascript-plain"
   const array = [iconHtml, iconCss, iconJs]
+
+  const [t] = useTranslation("global");
 
   let iTecs = ["", "", iconFigma];
 
@@ -117,7 +120,7 @@ function Card({
       </div>
       <Button
         className={`${size.btn} self-center outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-0 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full select-none dark:text-zinc-300`}
-        label="Ver mais"
+        label={t("card.seemore")}
         onClick={() => setVisible(true)}
       />
       <Dialog
@@ -156,17 +159,17 @@ function Card({
                 <a href={psite} target="blank">
                   <div className="w-40 h-10 rounded-lg after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-zinc-600 font-bold text-zinc-700 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-zinc-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full flex items-center justify-between px-8 dark:text-slate-100 dark:after:bg-black dark:outline-black">
                     <i className="pi pi-external-link"></i>
-                    <p>Abrir site</p>
+                    <p>{t("card.openwebsite")}</p>
                   </div>
                 </a>
                 <a href={pgithub} target="blank">
                   <div className="w-40 h-10 rounded-lg after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-black font-bold text-black z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-black hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full flex items-center justify-between gap-2 px-6 dark:outline-white dark:text-white dark:after:bg-white dark:hover:text-black">
                     <i className="pi pi-github text-lg"></i>
-                    <p>Repositório</p>
+                    <p>{t("card.repository")}</p>
                   </div>
                 </a>
                 <Button
-                  label="Fechar"
+                  label={t("card.close")}
                   onClick={() => setVisible(false)}
                   className="w-40 h-10 rounded-lg after:hover:w-44 outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-50 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full select-none dark:text-zinc-300"
                 />

@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 export default function Contact() {
+  const [t] = useTranslation("global");
+
   return (
     <div id="contact" className="w-full h-3/6 my-20 relative">
       <h1 className="text-4xl text-slate-900 font-bold text-center dark:text-zinc-100">
-        Contato
+        {t("contact")}
       </h1>
       <div className="flex flex-col justify-center items-center mt-12 gap-4">
         <a
