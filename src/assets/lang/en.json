@@ -1,0 +1,72 @@
+{
+    "greeting": {
+        "morning": "Good morning☕",
+        "afternoon": "Good afternoon 🍂",
+        "night": "Good night 🌌"
+    },
+    "welcome": "Welcome!",
+    "nav": {
+        "home": "Home",
+        "about": "About me",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "intro": {
+        "title": "Your next developer",
+        "subtitle": "Hello! I'm Daniel Bueno, I'm 16 years old and a frontend developer"
+    },
+    "about": {
+        "title": "About me",
+        "paragraph": {
+            "text1": "My name is Daniel Bueno, and I have been passionate about technology since I was a child. I started developing and programming in 2022, fell completely in love with programming, and since then, I have been striving to constantly improve. So, I applied for the selection process to enter Etec Jaraguá in the Systems Development course with High School, and fortunately, I was accepted in second place.",
+            "text2": "Currently, I am in the 2nd year of high school at Etec Jaraguá. I work on projects with ReactJS, NodeJS, among other technologies, and I wish to explore new languages, technologies, and frameworks. Although I am currently in the frontend area, I want to become a full stack developer. I plan to apply for internship positions to gain professional experience, as I have never worked in this field.",
+            "text3": "I enjoy learning new things to apply in my projects, and I always dedicate part of my day to studying development on my own. Besides technology, I love weight training, riding my bike, camping, listening to music, reading books, going to church, and seeing dividends deposited into my account."
+        },
+        "buttonlabel": "Technologies",
+        "tooltip": {
+            "studying": "Studying",
+            "intermediateknowledge": "Intermediate knowledge",
+            "solidknowledge": "Solid knowledge"
+        },
+        "imgalt": "Profile picture"
+    },
+    "projects": {
+        "title": "My projects",
+        "ds": {
+            "text": "See everything about the Systems Development course!",
+            "about": "Developed in partnership with two school friends, with the goal of promoting our course and increasing our visibility, this idea was suggested by a teacher, and we decided to take on the responsibility for the project. This was my first development project with ReactJS!"
+        },
+        "short": {
+            "text": "Know the content of the video without even opening it.",
+            "about": "Short Summary allows users to view a summary of the video without needing to watch it, using artificial intelligence to extract the text and create the summary. This was my first experience with Express, which taught me a lot about NodeJS."
+        },
+        "age": {
+            "text": "See your age precisely!",
+            "about": "The Age Calculator is a web application that allows users to calculate their age in years, months, and days. This project allowed me to learn a lot about date manipulation in JavaScript, as well as improve my skills with forms in HTML and CSS."
+        },
+        "festa": {
+            "text": "History, foods, and recipes, everything about Festa Junina!",
+            "about": "Festa Junina is a web application that allows users to learn more about the Festa Junina, its origins, foods, and recipes. This project was a school assignment and was developed only for desktop responsiveness. It helped me to better understand how JavaScript works and the importance of a minimalist design."
+        },
+        "cps": {
+            "text": "Measure your CPS and see your score!",
+            "about": "The CPS Test is a web application that allows users to measure their clicks per second speed and view their score. This project was inspired by a challenge my friend proposed to me, and being competitive, I decided to develop it. It was an opportunity to learn about event handling in JavaScript."
+        },
+        "moreprojects": "More projects",
+        "fewerprojects": "Fewer projects"
+    },
+    "card": {
+        "seemore": "See more",
+        "imgalt": "Project icon",
+        "openwebsite": "Open site",
+        "repository": "Repository",
+        "close": "Close"
+    },
+    "contact": "Contact",
+    "month": {
+        "june": "June, 2023",
+        "july": "July, 2023",
+        "november": "November, 2023",
+        "october": "October, 2023"
+    }
+}
