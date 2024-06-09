@@ -57,17 +57,17 @@ function Navbar() {
   const fnUl = () => {
     if (isMobile && !menu) return " hidden ";
     else if (isMobile && menu)
-      return " flex flex-col gap-7 text-zinc-800 font-semibold text-lg text-center";
+      return " flex flex-col gap-7 text-zinc-700 font-semibold text-lg text-center";
     else if (!isMobile)
-      return " font-semibold text-lg flex gap-7 text-zinc-600 ";
+      return " font-semibold text-lg flex gap-7 text-zinc-700 ";
   };
   const fnNav = () => {
     if (isMobile && !menu)
-      return " justify-between w-screen bg-zinc-500/1 fixed backdrop-blur-sm flex items-center select-none z-40 min-sm:px-4 max-sm:px-12 max-md:px-20 max-lg:px-24 h-20 ";
+      return " justify-between w-screen fixed backdrop-blur-sm flex items-center select-none z-40 min-sm:px-4 max-sm:px-12 max-md:px-20 max-lg:px-24 h-20 ";
     else if (isMobile && menu)
-      return " w-screen h-screen absolute top-0 left-0 select-none flex flex-col items-center justify-center bg-zinc-500/1 backdrop-blur-xl z-40 gap-7 text-zinc-950 font-semibold text-lg";
+      return " w-screen h-screen absolute top-0 left-0 select-none flex flex-col items-center justify-center backdrop-blur-xl z-40 gap-7 text-zinc-950 font-semibold text-lg";
     else if (!isMobile)
-      return " justify-around w-screen bg-zinc-500/1 fixed backdrop-blur-sm flex items-center select-none z-40 min-sm:px-4 max-sm:px-12 max-md:px-20 max-lg:px-24 h-20";
+      return " justify-around w-screen fixed backdrop-blur-sm flex items-center select-none z-40 min-sm:px-4 max-sm:px-12 max-md:px-20 max-lg:px-24 h-20";
   };
 
   const handleChangeLanguage = (lang) => {
@@ -75,7 +75,7 @@ function Navbar() {
   };
 
   return (
-    <nav className={fnNav() + " dark:text-zinc-300"}>
+    <nav className={fnNav() + " dark:text-zinc-300 dark:bg-zinc-900/20 bg-zinc-100/10"}>
       <h1
       className={ (isMobile & menu ? " text-4xl  font-extrabold my-gradient-radial font-jetbrains -mt-12 mb-10" : " font-extrabold my-gradient-radial font-jetbrains max-sm:text-2xl max-lg:text-4xl lg:text-5xl ") + " " }>
         &lt;Daniel /&gt;
