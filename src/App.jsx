@@ -84,7 +84,7 @@ function App() {
 
     return (
         <>
-            <div id="window" className="w-screen h-screen overflow-x-hidden bg-zinc-100 selection:bg-zinc-800 selection:text-zinc-50 dark:bg-slate-900 dark:selection:bg-zinc-300 dark:selection:text-slate-900 transition-all">
+            <div id="window" className="w-screen h-screen overflow-x-hidden bg-zinc-100 selection:bg-zinc-800 selection:text-zinc-50 dark:bg-slate-900 dark:selection:bg-zinc-300 dark:selection:text-slate-900 transition-all scrollbar scrollbar-thin scrollbar-track-zinc-100 scrollbar-thumb-zinc-400 scroll-thumb-rounded-full dark:scrollbar-track-slate-900 dark:scrollbar-thumb-slate-600 ">
                 <div className='h-screen p-10 bg-zinc-900 absolute top-0 left-0 z-50 w-full flex flex-col gap-4 tracking-tighter font-black font-jetbrains items-center justify-center  text-zinc-200' id='intro-slider'>
                     <h1 className='max-sm:text-2xl sm:text-5xl lg:text-6xl' id='title-1'>{greeting}</h1>
                     <h1 className='max-sm:text-2xl sm:text-5xl lg:text-6xl' id='title-2'>{t("welcome")}</h1>
