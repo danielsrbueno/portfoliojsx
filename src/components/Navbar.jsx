@@ -2,7 +2,7 @@ import "../index.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/all";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useLayoutEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
@@ -73,6 +73,46 @@ function Navbar() {
   const handleChangeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
+
+  useLayoutEffect(() => {
+    const btn = document.getElementById("btn-menu");
+    const nav = document.querySelector("nav");
+    const ul = document.querySelector("ul");
+
+    if (isMobile && menu) {
+      gsap.to(nav, {
+        duration: 0.5,
+        height: "100vh",
+        ease: "expo.out",
+      });
+      gsap.to(ul, {
+        duration: 0.5,
+        opacity: 1,
+        ease: "expo.out",
+      });
+      gsap.to(btn, {
+        duration: 0.5,
+        rotate: 180,
+        ease: "expo.out",
+      });
+    } else if (isMobile && !menu) {
+      gsap.to(nav, {
+        duration: 0.5,
+        height: "4.5rem",
+        ease: "expo.out",
+      });
+      gsap.to(ul, {
+        duration: 0.5,
+        opacity: 0,
+        ease: "expo.out",
+      });
+      gsap.to(btn, {
+        duration: 0.5,
+        rotate: 0,
+        ease: "expo.out",
+      });
+    }
+  }, [isMobile, menu]);
 
   return (
     <nav className={fnNav() + " dark:text-zinc-300 dark:bg-zinc-900/20 bg-zinc-100/10"}>
