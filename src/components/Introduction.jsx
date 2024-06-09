@@ -8,7 +8,7 @@ function Introduction() {
 
     return (
         <div id='introduction' className="pt-32 w-full h-4/5 flex flex-col justify-center items-center text-center select-none relative">
-            <h1 className="font-bold text-front text-slate-900 before:w-36 before:h-36 before:blur-3xl before:absolute before:top-1/4 before:left-1/5 before:bg-rose-300/60 max-sm:text-4xl max-sm:px-3 dark:text-zinc-300">
+            <h1 className="font-bold text-front text-slate-900 before:w-36 before:h-36 before:blur-3xl before:absolute before:top-1/6 before:left-1/5 before:bg-rose-300/60 max-sm:text-4xl max-sm:px-3 dark:text-zinc-300">
                 {t("intro.title")}
             </h1>
             <h1 className="font-extrabold text-front my-gradient-radial before:w-36 before:h-36 before:blur-3xl before:absolute before:top-2/4 before:right-1/4 before:bg-cyan-300/60 max-sm:text-5xl">
