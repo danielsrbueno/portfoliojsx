@@ -12,15 +12,16 @@
         "contact": "Contact"
     },
     "intro": {
-        "title": "Your next developer",
+        "title": "Your next frontent",
+        "spantitle": "Developer", 
         "subtitle": "Hello! I'm Daniel Bueno, I'm 16 years old and a frontend developer"
     },
     "about": {
         "title": "About me",
         "paragraph": {
-            "text1": "My name is Daniel Bueno, and I have been passionate about technology since I was a child. I started developing and programming in 2022, fell completely in love with programming, and since then, I have been striving to constantly improve. So, I applied for the selection process to enter Etec Jaraguá in the Systems Development course with High School, and fortunately, I was accepted in second place.",
-            "text2": "Currently, I am in the 2nd year of high school at Etec Jaraguá. I work on projects with ReactJS, NodeJS, among other technologies, and I wish to explore new languages, technologies, and frameworks. Although I am currently in the frontend area, I want to become a full stack developer. I plan to apply for internship positions to gain professional experience, as I have never worked in this field.",
-            "text3": "I enjoy learning new things to apply in my projects, and I always dedicate part of my day to studying development on my own. Besides technology, I love weight training, riding my bike, camping, listening to music, reading books, going to church, and seeing dividends deposited into my account."
+            "text1": "My name is Daniel Bueno, and technology has been a passion since childhood. Developing and programming began in 2022, sparking a deep love for the field. This passion led to a constant pursuit of improvement. Consequently, the decision was made to apply for the Systems Development course at Etec Jaraguá, combining it with High School education. Fortunately, acceptance came with the honor of securing second place.",
+            "text2": "Currently in the 2nd year of high school at Etec Jaraguá, working on projects with ReactJS, NodeJS, among other technologies, with a desire to explore new languages, technologies, and frameworks. Although focused on the frontend area at the moment, the goal is to become a full stack developer. Plans include applying for internship positions to gain professional experience, having no previous work in this field.",
+            "text3": "Learning new things to apply in my projects is something I enjoy, and part of my day is always dedicated to studying development independently. Besides technology, there's a love for weight training, biking, camping, listening to music, reading books, going to church, and seeing dividends deposited into my account."
         },
         "buttonlabel": "Technologies",
         "tooltip": {
