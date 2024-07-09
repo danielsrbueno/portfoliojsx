@@ -38,7 +38,7 @@ function Projects() {
   }, [key, t]);
 
   return (
-    <div id="projects" className="w-full flex flex-col justify-around items-center text-justify py-12 relative">
+    <div id="projects" className="w-full min-h-screen max-h-[150vh] flex flex-col justify-around items-center text-justify py-16 relative shadow-lg">
       <h1 className="mb-6 text-4xl font-bold text-slate-900 before:w-36 before:h-36 before:blur-3xl before:absolute before:-translate-x-24 before:-translate-y-12 before:bg-rose-300/60 dark:text-zinc-100">
         {t("projects.title")}
       </h1>

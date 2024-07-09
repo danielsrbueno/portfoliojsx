@@ -20,8 +20,8 @@ function About() {
   // [, "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/certificado.png", "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/certificate-_1_.png", "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/certificate.png"];
 
   return (
-    <div id="about" className="bg-zinc-400/10 w-full flex flex-col justify-around items-center text-justify my-48 py-12 relative shadow-sm  dark:bg-zinc-300/10">
-      <h1 className="mb-6 text-4xl font-bold text-slate-900 before:w-32 before:h-32 before:blur-3xl before:absolute before:translate-x-36 before:-translate-y-10 before:bg-cyan-300/50 dark:text-zinc-100">
+    <div id="about" className="bg-zinc-400/10 w-full flex flex-col justify-around items-center text-justify py-12 relative shadow-lg  dark:bg-zinc-300/10">
+      <h1 className="mb-6 text-4xl font-bold text-slate-900 before:w-32 before:h-32 before:blur-3xl before:absolute before:translate-x-36 before:-translate-y-8 before:bg-cyan-300/50 dark:text-zinc-100">
         {t("about.title")}
       </h1>
       <div className="p-11 flex justify-around items-center text-justify max-lg:flex-col-reverse">

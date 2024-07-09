@@ -94,7 +94,7 @@ function Card({
 
   return (
     <div
-      className={`${size.body} bg-zinc-50 rounded-2xl flex flex-col justify-between shadow-md hover:scale-105 hover:shadow-xl transition-all duration-500 relative overflow-hidden dark:bg-slate-800/50`}
+      className={`${size.body} bg-zinc-50/50 rounded-2xl flex flex-col justify-between shadow-md hover:scale-105 hover:shadow-xl transition-all duration-500 relative overflow-hidden dark:bg-slate-800/80`}  
     >
       <div
         className={`w-11/12 h-1/3 bg-orange-500 ${size.blur} absolute -top-12 -left-16`}
