@@ -13,14 +13,14 @@
     },
     "intro": {
         "title": "Seu próximo desenvolvedor",
-        "spantitle": "Frontend", 
-        "subtitle": "Olá! Eu sou o Daniel Bueno, tenho 17 anos, sou desenvolvedor Frontend"
+        "spantitle": "Fullstack", 
+        "subtitle": "Olá! Eu sou o Daniel Bueno, tenho 17 anos, sou desenvolvedor Fullstack"
     },
     "about": {
         "title": "Sobre mim",
         "paragraph": {
             "text1": "Meu nome é Daniel Bueno, sou apaixonado por tecnologia desde pequeno. Comecei a desenvolver e programar em 2022, me apeguei totalmente pela programação, e desde então tenho buscado me aprimorar constantemente. Então me candidatei no processo seletivo para entrar na Etec Jaraguá no curso de Desenvolvimento de Sistemas com Ensino Médio, e felizmente fui aprovado em segundo lugar.",
-            "text2": "Atualmente estou no 2º ano do ensino médio na Etec Jaraguá, faço projetos com ReactJS, NodeJS, dentre outras tecnologias, desejo explorar novas linguagens, tecnologias e frameworks. Por mais que eu esteja na área de frontend, quero me tornar full stack. Pretendo aplicar para vagas de estágio para ganhar experiencia profissional, pois nunca trabalhei nessa área.",
+            "text2": "Atualmente estou no 3º ano do ensino médio na Etec Jaraguá, faço projetos com ReactJS, NodeJS, dentre outras tecnologias, desejo explorar novas linguagens, tecnologias e frameworks. Pretendo aplicar para vagas de estágio para ganhar experiencia profissional, pois nunca trabalhei nessa área.",
             "text3": "Gosto de aprender coisas novas para aplicar em meus projetos, sempre dedico uma parte do meu dia para estudar desenvolvimento sozinho. Além da tecnologia, amo treinar musculação, andar de bicicleta, acampar, escutar músicas, ler livros, ir à igreja e ver dividendos caindo na minha conta."
         },
         "buttonlabel": "Tecnologias",

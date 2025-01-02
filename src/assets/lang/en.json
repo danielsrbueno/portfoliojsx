@@ -12,15 +12,15 @@
         "contact": "Contact"
     },
     "intro": {
-        "title": "Your next frontent",
+        "title": "Your next fullstack",
         "spantitle": "Developer", 
-        "subtitle": "Hello! I'm Daniel Bueno, I'm 17 years old and a frontend developer"
+        "subtitle": "Hello! I'm Daniel Bueno, I'm 17 years old and a fullstack developer"
     },
     "about": {
         "title": "About me",
         "paragraph": {
             "text1": "My name is Daniel Bueno, and technology has been a passion since childhood. Developing and programming began in 2022, sparking a deep love for the field. This passion led to a constant pursuit of improvement. Consequently, the decision was made to apply for the Systems Development course at Etec Jaraguá, combining it with High School education. Fortunately, acceptance came with the honor of securing second place.",
-            "text2": "Currently in the 2nd year of high school at Etec Jaraguá, working on projects with ReactJS, NodeJS, among other technologies, with a desire to explore new languages, technologies, and frameworks. Although focused on the frontend area at the moment, the goal is to become a full stack developer. Plans include applying for internship positions to gain professional experience, having no previous work in this field.",
+            "text2": "Currently in the 3rd year of high school at Etec Jaraguá, working on projects with ReactJS, NodeJS, among other technologies, with a desire to explore new languages, technologies, and frameworks. Plans include applying for internship positions to gain professional experience, having no previous work in this field.",
             "text3": "Learning new things to apply in my projects is something I enjoy, and part of my day is always dedicated to studying development independently. Besides technology, there's a love for weight training, biking, camping, listening to music, reading books, going to church, and seeing dividends deposited into my account."
         },
         "buttonlabel": "Technologies",
