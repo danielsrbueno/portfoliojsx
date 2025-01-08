@@ -33,6 +33,8 @@ function Card({
   const iconReact = "devicon-react-original"
   const iconNode = "devicon-nodejs-plain"
   const iconExpress = "devicon-express-original"
+  const iconMongo = "devicon-mongodb-plain"
+  const iconNext = "devicon-nextjs-plain"
   const iconFigma = "devicon-figma-plain"
   const iconHtml = "devicon-html5-plain"
   const iconCss = "devicon-css3-plain"
@@ -53,6 +55,22 @@ function Card({
 
   if (ptecs[1] === "NodeJS") {
     iTecs[1] = iconNode;
+  }
+
+  if (ptecs[1] === "Express") {
+    iTecs[1] = iconExpress;
+  }
+
+  if (ptecs[2] === "Express") {
+    iTecs[2] = iconExpress;
+  }
+
+  if (ptecs[2] === "MongoDB") {
+    iTecs[2] = iconMongo;
+  }
+
+  if (ptecs[0] === "NextJS") {
+    iTecs[0] = iconNext;
   }
 
   if (ptecs[0] === "HTML") {
@@ -134,7 +152,7 @@ function Card({
               <img
                 className="h-20 max-md:h-12"
                 src={picon}
-                alt={`icone do projeto ${ptitle}`}
+                alt={`Ícone do projeto ${ptitle}`}
               />
               <h1 className="font-black text-5xl font-jetbrains tracking-tight max-md:text-3xl">
                 {ptitle}

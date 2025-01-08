@@ -9,16 +9,16 @@ function Projects() {
     "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/short-summary.png";
   const urlDS =
     "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/ds-jaragua.png";
-  const urlCPS =
-    "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/cps-test.png";
-  const urlFesta =
-    "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/festa-junina.png";
+  const urlTicket =
+    "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/ticket-generator.png";
+  const urlNotes =
+    "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/notes.png";
   const iconDS = "https://ds-jaragua.vercel.app/assets/logo-7e40ab17.svg";
   const iconShort =
     "https://raw.githubusercontent.com/danielsrbueno/short-summary/9db44eaec84df3860d405e92d50e0f8055c99dae/public/logo.svg";
-  const iconAge = "https://res.cloudinary.com/practicaldev/image/fetch/s--U6E1tTP8--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1390/f6c7428b-c890-4c97-a586-352a887caad6.png"
-  const iconFesta = "https://github.com/danielsrbueno/festa-junina/blob/main/fogueira.png?raw=true"
-  const iconCPS = "https://cdn1.iconfinder.com/data/icons/complete-version-1/1024/action4-512.png"
+  const iconAge = "https://www.frontendmentor.io/_next/image?url=%2Fstatic%2Fimages%2Flogo-mobile.svg&w=32&q=75"
+  const iconTicket = "https://ticketgenerator-interface.netlify.app/favicon.ico";
+  const iconNotes = "https://notes-interface-app.netlify.app/notebook-pen.ico";
 
   const [key, setKey] = useState(false);
   const [t] = useTranslation("global");
@@ -45,16 +45,16 @@ function Projects() {
       <div className="w-8/12 flex flex-col py-12 relative gap-6 justify-center items-center">
         <div className="grid grid-flow-col gap-8 columns-2 max-md:grid-flow-row">
           <Card
-            ptitle="DS Jaraguá"
-            ptext={t("projects.ds.text")}
+            ptitle="Ticket Generator"
+            ptext={t("projects.ticket.text")}
             ptype="large"
-            pimg={urlDS}
-            pabout={t("projects.ds.about")}
-            pdate={t("month.november")}
-            psite="https://ds-jaragua.vercel.app/"
-            pgithub="https://github.com/freitassdev/ds-etecjaragua"
-            picon={iconDS}
-            ptecs={["ReactJS", "NodeJS", "Figma"]}
+            pimg={urlTicket}
+            pabout={t("projects.ticket.about")}
+            pdate={t("month.january")}
+            psite="https://ticketgenerator-interface.netlify.app/"
+            pgithub="https://github.com/danielsrbueno/ticket-generator"
+            picon={iconTicket}
+            ptecs={["NextJS", "Express", "MongoDB"]}
           />
           <Card
             ptitle="Short Summary"
@@ -63,13 +63,37 @@ function Projects() {
             pimg={urlShort}
             picon={iconShort}
             pabout={t("projects.short.about")}
-            pdate={t("month.october")}
+            pdate={t("month.october-23")}
             psite="https://short-summary-nu.vercel.app/"
             pgithub="https://github.com/danielsrbueno/short-summary"
             ptecs={["Express", "NodeJS", "Figma"]}
           />
         </div>
         <div className="grid grid-flow-col gap-6 columns-3 max-md:hidden" id="smalls">
+          <Card
+            ptitle="Notes"
+            ptext={t("projects.notes.text")}
+            ptype="small"
+            pimg={urlNotes}
+            picon={iconNotes}
+            pabout={t("projects.notes.about")}
+            pdate={t("month.october-24")}
+            psite="https://notes-interface-app.netlify.app/"
+            pgithub="https://github.com/danielsrbueno/notes-frontend"
+            ptecs={["ReactJS", "NodeJS", "Express"]}
+          />
+          <Card
+            ptitle="DS Jaraguá"
+            ptext={t("projects.ds.text")}
+            ptype="small"
+            pimg={urlDS}
+            picon={iconDS}
+            pabout={t("projects.ds.about")}
+            pdate={t("month.november")}
+            psite="https://ds-jaragua.vercel.app/"
+            pgithub="https://github.com/freitassdev/ds-etecjaragua"
+            ptecs={["ReactJS", "NodeJS", "Figma"]}
+          />
           <Card
             ptitle="Age calculator"
             ptext={t("projects.age.text")}
@@ -80,30 +104,6 @@ function Projects() {
             pdate={t("month.july")}
             psite="https://danielsrbueno.github.io/age-calculator/"
             pgithub="https://github.com/danielsrbueno/age-calculator"
-            ptecs={["HTML", "CSS", "JavaScript"]}
-          />
-          <Card
-            ptitle="Festa Junina"
-            ptext={t("projects.festa.text")}
-            ptype="small"
-            pimg={urlFesta}
-            picon={iconFesta}
-            pabout={t("projects.festa.about")}
-            pdate={t("month.june")}
-            psite="https://danielsrbueno.github.io/festa-junina/"
-            pgithub="https://github.com/danielsrbueno/festa-junina"
-            ptecs={["HTML", "CSS", "JavaScript"]}
-          />
-          <Card
-            ptitle="CPS Test"
-            ptext={t("projects.cps.text")}
-            ptype="small"
-            pimg={urlCPS}
-            picon={iconCPS}
-            pabout={t("projects.cps.about")}
-            pdate={t("month.july")}
-            psite="https://danielsrbueno.github.io/cps-test/"
-            pgithub="https://github.com/danielsrbueno/cps-test"
             ptecs={["HTML", "CSS", "JavaScript"]}
           />
         </div>

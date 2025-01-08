@@ -20,7 +20,7 @@
         "title": "About me",
         "paragraph": {
             "text1": "My name is Daniel Bueno, and technology has been a passion since childhood. Developing and programming began in 2022, sparking a deep love for the field. This passion led to a constant pursuit of improvement. Consequently, the decision was made to apply for the Systems Development course at Etec Jaraguá, combining it with High School education. Fortunately, acceptance came with the honor of securing second place.",
-            "text2": "Currently in the 3rd year of high school at Etec Jaraguá, working on projects with ReactJS, NodeJS, among other technologies, with a desire to explore new languages, technologies, and frameworks. Plans include applying for internship positions to gain professional experience, having no previous work in this field.",
+            "text2": "Currently in the 3rd year of high school at Etec Jaraguá, working on projects with ReactJS, NodeJS, NextJS, among other technologies, with a desire to explore new languages, technologies, and frameworks. Plans include applying for internship positions to gain professional experience, having no previous work in this field.",
             "text3": "Learning new things to apply in my projects is something I enjoy, and part of my day is always dedicated to studying development independently. Besides technology, there's a love for weight training, biking, camping, listening to music, reading books, going to church, and seeing dividends deposited into my account."
         },
         "buttonlabel": "Technologies",
@@ -45,13 +45,15 @@
             "text": "See your age precisely!",
             "about": "The Age Calculator is a web application that allows users to calculate their age in years, months, and days. This project allowed me to learn a lot about date manipulation in JavaScript, as well as improve my skills with forms in HTML and CSS."
         },
-        "festa": {
-            "text": "History, foods, and recipes, everything about Festa Junina!",
-            "about": "Festa Junina is a web application that allows users to learn more about the Festa Junina, its origins, foods, and recipes. This project was a school assignment and was developed only for desktop responsiveness. It helped me to better understand how JavaScript works and the importance of a minimalist design."
+        "ticket": {
+            "text": "Generate your Coding Conf event ticket!",
+            "about": "The Ticket Generator is a web application that allows users to generate their ticket for the Coding Conf (fictional) event. In this project, I learned form handling, data validation with Zod + React Hook Form, and automatically sending emails with EmailJs. I also deepened my knowledge of Next.js."
+
         },
-        "cps": {
-            "text": "Measure your CPS and see your score!",
-            "about": "The CPS Test is a web application that allows users to measure their clicks per second speed and view their score. This project was inspired by a challenge my friend proposed to me, and being competitive, I decided to develop it. It was an opportunity to learn about event handling in JavaScript."
+        "notes": {
+            "text": "Make your daily notes!",
+            "about": "Notes is a web application that allows users to make daily notes, with the ability to save, edit, and delete them. This project allowed me to deepen my knowledge of Fullstack programming with Express.js and MongoDB."
+
         },
         "moreprojects": "More projects",
         "fewerprojects": "Fewer projects"
@@ -65,9 +67,11 @@
     },
     "contact": "Contact",
     "month": {
+        "january": "January, 2025",
         "june": "June, 2023",
         "july": "July, 2023",
         "november": "November, 2023",
-        "october": "October, 2023"
+        "october-23": "October, 2023",
+        "october-24": "October, 2024"
     }
 }

@@ -20,7 +20,7 @@
         "title": "Sobre mim",
         "paragraph": {
             "text1": "Meu nome é Daniel Bueno, sou apaixonado por tecnologia desde pequeno. Comecei a desenvolver e programar em 2022, me apeguei totalmente pela programação, e desde então tenho buscado me aprimorar constantemente. Então me candidatei no processo seletivo para entrar na Etec Jaraguá no curso de Desenvolvimento de Sistemas com Ensino Médio, e felizmente fui aprovado em segundo lugar.",
-            "text2": "Atualmente estou no 3º ano do ensino médio na Etec Jaraguá, faço projetos com ReactJS, NodeJS, dentre outras tecnologias, desejo explorar novas linguagens, tecnologias e frameworks. Pretendo aplicar para vagas de estágio para ganhar experiencia profissional, pois nunca trabalhei nessa área.",
+            "text2": "Atualmente estou no 3º ano do ensino médio na Etec Jaraguá, faço projetos com ReactJS, NodeJS, NextJS, dentre outras tecnologias, desejo explorar novas linguagens, tecnologias e frameworks. Pretendo aplicar para vagas de estágio para ganhar experiencia profissional, pois nunca trabalhei nessa área.",
             "text3": "Gosto de aprender coisas novas para aplicar em meus projetos, sempre dedico uma parte do meu dia para estudar desenvolvimento sozinho. Além da tecnologia, amo treinar musculação, andar de bicicleta, acampar, escutar músicas, ler livros, ir à igreja e ver dividendos caindo na minha conta."
         },
         "buttonlabel": "Tecnologias",
@@ -45,13 +45,13 @@
             "text": "Veja sua idade precisamente!",
             "about": "O Age Calculator é uma aplicação web que permite ao usuário calcular sua idade em anos, meses e dias. Este projeto me permitiu aprender muito sobre a manipulação de datas em JavaScript, além de melhorar minhas habilidades com forms no HTML e CSS."
         },
-        "festa": {
-            "text": "História, comidas e receitas, tudo sobre festa Junina!",
-            "about": "O Festa Junina é uma aplicação web que permite ao usuário conhecer mais sobre a festa junina, suas origens, comidas e receitas. Este projeto foi um trabalho escolar, e foi desenvolvido apenas para responsividade de desktop. Ele me ajudou a entender melhor o funcionamento do JavaScript e a importância de um design minimalista."
+        "ticket": {
+            "text": "Gere seu ticket do evento Coding Conf!",
+            "about": "O Ticket Generator é uma aplicação web que permite ao usuário gerar seu ticket para o evento Coding Conf (fictício). Neste projeto aprendi manipulação de formulários, validação de dados com o Zod + React Hook Form, e enviar emails automaticamente com o EmailJs, além de me aprofundar um pouco mais em Next.js."
         },
-        "cps": {
-            "text": "Meça seu CPS e veja sua pontuação!",
-            "about": "O CPS Test é uma aplicação web que permite ao usuário medir sua velocidade de cliques por segundo e ver sua pontuação. Este projeto foi inspirado em um desafio que meu amigo me propôs, e como sou competitivo, resolvi desenvolvê-lo. Foi uma oportunidade de aprender sobre a manipulação de eventos em JavaScript."
+        "notes": {
+            "text": "Faça as suas anotações do dia a dia!",
+            "about": "O Notes é uma aplicação web que permite ao usuário fazer anotações do cotidiano, podendo salvar, editar e excluir as anotações. Este projeto me permitimiu me aprofundar um pouco mais em programação Fullstack com Express.js e MongoDB."
         },
         "moreprojects": "Mais projetos",
         "fewerprojects": "Menos projetos"
@@ -65,9 +65,11 @@
     },
     "contact": "Contato",
     "month": {
+        "january": "Janeiro, 2025",
         "june": "Junho, 2023",
         "july": "Julho, 2023",
         "november": "Novembro, 2023",
-        "october": "Outubro, 2023"
+        "october-23": "Outubro, 2023",
+        "october-24": "Outubro, 2024"
     }
 }
