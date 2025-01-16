@@ -17,7 +17,7 @@ function Projects() {
   const iconShort =
     "https://raw.githubusercontent.com/danielsrbueno/short-summary/9db44eaec84df3860d405e92d50e0f8055c99dae/public/logo.svg";
   const iconAge = "https://www.frontendmentor.io/_next/image?url=%2Fstatic%2Fimages%2Flogo-mobile.svg&w=32&q=75"
-  const iconTicket = "https://ticketgenerator-interface.netlify.app/favicon.ico";
+  const iconTicket = "https://codingconf.netlify.app/favicon.ico";
   const iconNotes = "https://notes-interface-app.netlify.app/notebook-pen.ico";
 
   const [key, setKey] = useState(false);
@@ -51,7 +51,7 @@ function Projects() {
             pimg={urlTicket}
             pabout={t("projects.ticket.about")}
             pdate={t("month.january")}
-            psite="https://ticketgenerator-interface.netlify.app/"
+            psite="https://codingconf.netlify.app/"
             pgithub="https://github.com/danielsrbueno/ticket-generator"
             picon={iconTicket}
             ptecs={["NextJS", "Express", "MongoDB"]}
