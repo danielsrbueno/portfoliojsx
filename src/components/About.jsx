@@ -92,17 +92,26 @@ function About() {
                   <i className="devicon-figma-plain hover:text-zinc-600 transition-all icon" data-pr-tooltip={"Figma -  " + t("about.tooltip.intermediateknowledge") + " (Etec)"} />
                 </div>
                 <h1 className="font-bold text-slate-900 mb-4 dark:text-zinc-100">Backend</h1>
-                <div className="flex gap-4 text-5xl max-md:text-4xl max-sm:text-2xl max-sm:gap-2 dark:text-zinc-300">
-                  <i className="devicon-git-plain hover:text-orange-700 transition-all icon" data-pr-tooltip={"Git - " + t("about.tooltip.intermediateknowledge")} />
-                  <i className="devicon-github-plain hover:text-zinc-600 transition-all icon" data-pr-tooltip={"Github - " + t("about.tooltip.intermediateknowledge")} />
-                  <i className="devicon-csharp-plain hover:text-violet-600 transition-all icon" data-pr-tooltip={"CShap - " + t("about.tooltip.intermediateknowledge") + " (Etec)"} />
-                  <i className="devicon-php-plain hover:text-violet-400 transition-all icon" data-pr-tooltip={"PHP - " + t("about.tooltip.studying") + " (Etec)"}/>
-                  <i className="devicon-java-plain hover:text-red-500 transition-all icon" data-pr-tooltip={"Java - " + t("about.tooltip.studying") + " (Etec)"}/>
-                  <i className="devicon-nodejs-plain hover:text-lime-600 transition-all icon" data-pr-tooltip={"NodeJS - " + t("about.tooltip.studying")}/>
-                  <i className="devicon-typescript-plain hover:text-blue-600 transition-all icon" data-pr-tooltip={"TypeScript - " + t("about.tooltip.studying")} />
-                  <i className="devicon-express-original hover:text-zinc-600 transition-all icon" data-pr-tooltip={"Express - " + t("about.tooltip.studying")} />
-                  <i className="devicon-mysql-plain hover:text-sky-800 transition-all icon" data-pr-tooltip={"MySQL - " + t("about.tooltip.studying") + " (Etec)"} />
-                  <i className="devicon-mongodb-plain hover:text-lime-600 transition-all icon" data-pr-tooltip={"MongoDB - " + t("about.tooltip.studying")} />
+                <div className="flex flex-col gap-4 text-5xl max-md:text-4xl max-sm:text-2xl max-sm:gap-2 dark:text-zinc-300">
+                  <div className="flex gap-4 text-5xl max-md:text-4xl max-sm:text-2xl max-sm:gap-2 dark:text-zinc-300">
+                    <i className="devicon-nodejs-plain hover:text-lime-600 transition-all icon" data-pr-tooltip={"NodeJS - " + t("about.tooltip.studying")}/>
+                    <i className="devicon-typescript-plain hover:text-blue-600 transition-all icon" data-pr-tooltip={"TypeScript - " + t("about.tooltip.studying")} />
+                    <i className="devicon-nextjs-plain hover:text-zinc-700 transition-all icon" data-pr-tooltip={"NextJS - " + t("about.tooltip.studying")} />
+                    <i className="devicon-express-original hover:text-zinc-600 transition-all icon" data-pr-tooltip={"Express - " + t("about.tooltip.studying")} />
+                    <i className="devicon-git-plain hover:text-orange-700 transition-all icon" data-pr-tooltip={"Git - " + t("about.tooltip.intermediateknowledge")} />
+                    <i className="devicon-github-plain hover:text-zinc-600 transition-all icon" data-pr-tooltip={"Github - " + t("about.tooltip.intermediateknowledge")} />
+                  </div>
+                  <div className="flex gap-4 text-5xl max-md:text-4xl max-sm:text-2xl max-sm:gap-2 dark:text-zinc-300">
+                    <i className="devicon-mysql-plain hover:text-sky-800 transition-all icon" data-pr-tooltip={"MySQL - " + t("about.tooltip.studying") + " (Etec)"} />
+                    <i className="devicon-mongodb-plain hover:text-lime-600 transition-all icon" data-pr-tooltip={"MongoDB - " + t("about.tooltip.studying")} />
+                    <i className="devicon-docker-plain hover:text-sky-400 transition-all icon" data-pr-tooltip={"Docker - " + t("about.tooltip.studying")} />
+                    <i className="devicon-php-plain hover:text-violet-400 transition-all icon" data-pr-tooltip={"PHP - " + t("about.tooltip.studying") + " (Etec)"}/>
+                    <i className="devicon-csharp-plain hover:text-violet-600 transition-all icon" data-pr-tooltip={"CShap - " + t("about.tooltip.intermediateknowledge") + " (Etec)"} />
+                    <i className="devicon-java-plain hover:text-red-500 transition-all icon" data-pr-tooltip={"Java - " + t("about.tooltip.studying") + " (Etec)"}/>
+                  </div>
+                  <div className="flex gap-4 text-5xl max-md:text-4xl max-sm:text-2xl max-sm:gap-2 dark:text-zinc-300">
+                    <i className="devicon-nestjs-plain hover:text-rose-500 transition-all icon" data-pr-tooltip={"NestJS - " + t("about.tooltip.studying")}/>
+                  </div>
                 </div>
               </div>
             </Dialog>
