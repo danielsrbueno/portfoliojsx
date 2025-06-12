@@ -34,16 +34,16 @@
     "projects": {
         "title": "Meus projetos",
         "ds": {
-            "text": "Veja tudo sobre o curso de desenvolvimento de sistemas!",
+            "text": "Tudo sobre o curso de Desenvolvimento de Sistemas!",
             "about": "Desenvolvido em parceria com dois amigos da escola, com o objetivo de promover nosso curso e ampliar nossa visibilidade, essa ideia foi sugerida por um professor, e nós decidimos assumir a responsabilidade pelo projeto. Este foi meu primeiro projeto em desenvolvimento com ReactJS!"
         },
         "short": {
-            "text": "Saiba o conteúdo do vídeo sem sequer entrar nele.",
+            "text": "Resuma vídeos com Inteligência Artificial.",
             "about": "O Short Summary permite ao usuário visualizar um resumo do vídeo sem precisar assisti-lo, utilizando inteligência artificial para extrair o texto e criar o resumo. Essa foi minha primeira experiência com Express, a qual me proporcionou muitos aprendizados sobre NodeJS."
         },
-        "age": {
-            "text": "Veja sua idade precisamente!",
-            "about": "O Age Calculator é uma aplicação web que permite ao usuário calcular sua idade em anos, meses e dias. Este projeto me permitiu aprender muito sobre a manipulação de datas em JavaScript, além de melhorar minhas habilidades com forms no HTML e CSS."
+        "flyra": {
+          "text": "Drones inteligentes para detecção de incêndios florestais.",
+          "about": "A Flyra é o meu projeto de TCC. Sou responsável pelo desenvolvimento do site institucional, do aplicativo mobile e do backend central do sistema. O objetivo do projeto é criar drones embarcados com IA capazes de detectar incêndios florestais ainda em seu estágio inicial."
         },
         "ticket": {
             "text": "Gere seu ticket do evento Coding Conf!",

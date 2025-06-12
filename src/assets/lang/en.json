@@ -38,12 +38,12 @@
             "about": "Developed in partnership with two school friends, with the goal of promoting our course and increasing our visibility, this idea was suggested by a teacher, and we decided to take on the responsibility for the project. This was my first development project with ReactJS!"
         },
         "short": {
-            "text": "Know the content of the video without even opening it.",
+            "text": "Summarize videos with AI.",
             "about": "Short Summary allows users to view a summary of the video without needing to watch it, using artificial intelligence to extract the text and create the summary. This was my first experience with Express, which taught me a lot about NodeJS."
         },
-        "age": {
-            "text": "See your age precisely!",
-            "about": "The Age Calculator is a web application that allows users to calculate their age in years, months, and days. This project allowed me to learn a lot about date manipulation in JavaScript, as well as improve my skills with forms in HTML and CSS."
+        "flyra": {
+          "text": "Smart drones for forest fire detection.",
+          "about": "Flyra is my final project (TCC). I'm responsible for developing the institutional website, the mobile app, and the system's central backend. The goal of the project is to create smart drones with AI capable of detecting forest fires in their early stages."
         },
         "ticket": {
             "text": "Generate your Coding Conf event ticket!",

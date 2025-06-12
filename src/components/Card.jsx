@@ -35,6 +35,7 @@ function Card({
   const iconExpress = "devicon-express-original"
   const iconMongo = "devicon-mongodb-plain"
   const iconNext = "devicon-nextjs-plain"
+  const iconNestJS = "devicon-nestjs-plain"
   const iconFigma = "devicon-figma-plain"
   const iconHtml = "devicon-html5-plain"
   const iconCss = "devicon-css3-plain"
@@ -52,6 +53,10 @@ function Card({
   if (ptecs[0] === "Express") {
     iTecs[0] = iconExpress;
   } 
+
+  if (ptecs[0] === "NodeJS") {
+    iTecs[0] = iconNode;
+  }
 
   if (ptecs[1] === "NodeJS") {
     iTecs[1] = iconNode;
@@ -71,6 +76,14 @@ function Card({
 
   if (ptecs[0] === "NextJS") {
     iTecs[0] = iconNext;
+  }
+
+  if (ptecs[1] === "NextJS") {
+    iTecs[1] = iconNext;
+  }
+
+  if (ptecs[2] === "NestJS") {
+    iTecs[2] = iconNestJS;
   }
 
   if (ptecs[0] === "HTML") {

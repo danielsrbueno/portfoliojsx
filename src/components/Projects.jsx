@@ -16,7 +16,8 @@ function Projects() {
   const iconDS = "https://ds-jaragua.vercel.app/assets/logo-7e40ab17.svg";
   const iconShort =
     "https://raw.githubusercontent.com/danielsrbueno/short-summary/9db44eaec84df3860d405e92d50e0f8055c99dae/public/logo.svg";
-  const iconAge = "https://www.frontendmentor.io/_next/image?url=%2Fstatic%2Fimages%2Flogo-mobile.svg&w=32&q=75"
+  const iconFlyra = "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1749691050/logo-mini-390x394_zm1jbb.png";
+  const urlFlyra = "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1749690829/Screenshot_2025-06-11_220921_trz4ui.png";
   const iconTicket = "https://codingconf.netlify.app/favicon.ico";
   const iconNotes = "https://notes-interface-app.netlify.app/notebook-pen.ico";
 
@@ -44,17 +45,17 @@ function Projects() {
       </h1>
       <div className="w-8/12 flex flex-col py-12 relative gap-6 justify-center items-center">
         <div className="grid grid-flow-col gap-8 columns-2 max-md:grid-flow-row">
-          <Card
-            ptitle="Ticket Generator"
-            ptext={t("projects.ticket.text")}
+        <Card
+            ptitle="Flyra Drones"
+            ptext={t("projects.flyra.text")}
             ptype="large"
-            pimg={urlTicket}
-            pabout={t("projects.ticket.about")}
-            pdate={t("month.january")}
-            psite="https://codingconf.netlify.app/"
-            pgithub="https://github.com/danielsrbueno/ticket-generator"
-            picon={iconTicket}
-            ptecs={["NextJS", "Express", "MongoDB"]}
+            pimg={urlFlyra}
+            pabout={t("projects.flyra.about")}
+            pdate={t("month.october-24")}
+            psite="https://flyra.tech"
+            pgithub="https://github.com/Flyra-Drones"
+            picon={iconFlyra}
+            ptecs={["NodeJS", "NextJS", "NestJS"]}
           />
           <Card
             ptitle="Short Summary"
@@ -70,18 +71,18 @@ function Projects() {
           />
         </div>
         <div className="grid grid-flow-col gap-6 columns-3 max-md:hidden" id="smalls">
-          <Card
-            ptitle="Notes"
-            ptext={t("projects.notes.text")}
-            ptype="small"
-            pimg={urlNotes}
-            picon={iconNotes}
-            pabout={t("projects.notes.about")}
-            pdate={t("month.october-24")}
-            psite="https://notes-interface-app.netlify.app/"
-            pgithub="https://github.com/danielsrbueno/notes-frontend"
-            ptecs={["ReactJS", "NodeJS", "Express"]}
-          />
+        <Card
+          ptitle="Ticket Generator"
+          ptext={t("projects.ticket.text")}
+          ptype="small"flyra
+          pimg={urlTicket}
+          pabout={t("projects.ticket.about")}
+          pdate={t("month.january")}
+          psite="https://codingconf.netlify.app/"
+          pgithub="https://github.com/danielsrbueno/ticket-generator"
+          picon={iconTicket}
+          ptecs={["NextJS", "Express", "MongoDB"]}
+        />
           <Card
             ptitle="DS Jaraguá"
             ptext={t("projects.ds.text")}
@@ -94,7 +95,19 @@ function Projects() {
             pgithub="https://github.com/freitassdev/ds-etecjaragua"
             ptecs={["ReactJS", "NodeJS", "Figma"]}
           />
-          <Card
+           <Card
+            ptitle="Notes"
+            ptext={t("projects.notes.text")}
+            ptype="small"
+            pimg={urlNotes}
+            picon={iconNotes}
+            pabout={t("projects.notes.about")}
+            pdate={t("month.october-24")}
+            psite="https://notes-interface-app.netlify.app/"
+            pgithub="https://github.com/danielsrbueno/notes-frontend"
+            ptecs={["ReactJS", "NodeJS", "Express"]}
+          />
+          {/* <Card
             ptitle="Age calculator"
             ptext={t("projects.age.text")}
             ptype="small"
@@ -105,7 +118,7 @@ function Projects() {
             psite="https://danielsrbueno.github.io/age-calculator/"
             pgithub="https://github.com/danielsrbueno/age-calculator"
             ptecs={["HTML", "CSS", "JavaScript"]}
-          />
+          /> */}
         </div>
         <button
           className="w-40 h-10 rounded-xl after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-0 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full mt-4
