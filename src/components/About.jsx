@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";
 
 function About() {
   let image =
-    "https://github.com/danielsrbueno/portfolio-imgs/blob/main/imgPerfil.png?raw=true";
+    "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1761694958/perfil-bike_covp7h.webp";
 
   let [visible, setVisible] = useState(false);
   const [ t ] = useTranslation("global")

@@ -3,23 +3,21 @@ import { useState, useLayoutEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 function Projects() {
-  const urlAge =
-    "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/age-calculator.png";
   const urlShort =
-    "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/short-summary.png";
+    "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1761694956/short_fpd99h.webp";
   const urlDS =
-    "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/ds-jaragua.png";
+    "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1761694959/ds_ffigxp.webp";
   const urlTicket =
-    "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/ticket-generator.png";
+    "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1761694958/ticket_kn9rcu.webp";
   const urlNotes =
-    "https://raw.githubusercontent.com/danielsrbueno/portfolio-imgs/main/notes.png";
+    "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1761694960/notes_e2hkp9.webp";
   const iconDS = "https://ds-jaragua.vercel.app/assets/logo-7e40ab17.svg";
   const iconShort =
-    "https://raw.githubusercontent.com/danielsrbueno/short-summary/9db44eaec84df3860d405e92d50e0f8055c99dae/public/logo.svg";
+    "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1761694956/short-logo_qqjtnm.svg";
   const iconFlyra = "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1749691050/logo-mini-390x394_zm1jbb.png";
-  const urlFlyra = "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1749690829/Screenshot_2025-06-11_220921_trz4ui.png";
+  const urlFlyra = "https://res.cloudinary.com/dtvc1ejqk/image/upload/v1761695715/flyra-resized_wvkcdm.webp";
   const iconTicket = "https://codingconf.netlify.app/favicon.ico";
-  const iconNotes = "https://notes-interface-app.netlify.app/notebook-pen.ico";
+  const iconNotes = "https://www.svgrepo.com/show/526613/notes.svg";
 
   const [key, setKey] = useState(false);
   const [t] = useTranslation("global");
@@ -107,18 +105,6 @@ function Projects() {
             pgithub="https://github.com/danielsrbueno/notes-frontend"
             ptecs={["ReactJS", "NodeJS", "Express"]}
           />
-          {/* <Card
-            ptitle="Age calculator"
-            ptext={t("projects.age.text")}
-            ptype="small"
-            pimg={urlAge}
-            picon={iconAge}
-            pabout={t("projects.age.about")}
-            pdate={t("month.july")}
-            psite="https://danielsrbueno.github.io/age-calculator/"
-            pgithub="https://github.com/danielsrbueno/age-calculator"
-            ptecs={["HTML", "CSS", "JavaScript"]}
-          /> */}
         </div>
         <button
           className="w-40 h-10 rounded-xl after:hover:w-44 self-center outline outline-2 outline-offset-0 outline-rose-600 font-bold text-slate-900 z-0 relative overflow-hidden delay-100 after:w-0 after:h-full after:absolute after:top-0 after:left-0 after:transition-all after:hover:left-0 after:bg-rose-600 hover:delay-100 hover:text-slate-100 after:-z-10 after:rounded-r-full mt-4
