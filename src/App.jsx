@@ -3,8 +3,9 @@ import { gsap } from 'gsap'
 import Navbar from './components/Navbar'
 import Introduction from './components/Introduction'
 import About from './components/About'
-import Projetcs from './components/Projects'
+import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 import { useTranslation } from 'react-i18next'
 
 function App() {
@@ -92,8 +93,9 @@ function App() {
                 <Navbar />
                 <Introduction />
                 <About />
-                <Projetcs />
+                <Projects />
                 <Contact />
+                <Footer />
             </div>
         </>
     )
